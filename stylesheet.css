@@ -13,15 +13,20 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #FFFFFF;
+    color: #808080;
     text-decoration: none;
 }
 
-/* selected link */
+/* active link */
 a:active {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+/* Mouse hover selection*/
+::selection {
+    color: white; 
+    background: #CC0000;}
 
 /* Text Formatting */
 /* body { 
