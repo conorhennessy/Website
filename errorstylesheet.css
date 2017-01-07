@@ -1,0 +1,7 @@
+/* CSS for error page, everthing else is inherited from master*/
+
+/* Backround Gif */
+body {
+	background-image: url('https://i.imgur.com/Efs0sBH.gif');
+    background-size: cover;
+}
