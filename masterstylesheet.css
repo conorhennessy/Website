@@ -15,7 +15,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #808080;
+    color: #d9d9d9;
     text-decoration: none;
 }
 
@@ -30,12 +30,9 @@ a:active {
     color: white; 
     background: #CC0000;}
 
-/* /Text Formatting/ */
-/* Backround image*/
-/* body { 
-	background-image: url('https://i.imgur.com/Efs0sBH.gif');
-     background-size: cover;
-}*/
+/* /Text and Backround Formatting/ */
+body { 
+}
 
 p {
     font-family: "Courier New", Courier, Monospace, Times;
