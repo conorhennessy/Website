@@ -1,57 +1,63 @@
-/* MASTER CSS for whole site, individaul pages have overriding CSS in place*/
+/* MASTER CSS for whole site, individual pages have overriding CSS in place*/
 
-/*/Link Colours/ */
-/* unvisited link */
-a:link {
-    color: #FFFFFF;
-    text-decoration: none;
+/* /Divider Formatting/ */
+.text {
+	position: fixed;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	line-height: 42px;
 }
 
-/* visited link */
-a:visited {
-    color: #FFFFFF;
-    text-decoration: none;
+.footer {
+	position: fixed;
+	top: 90%;
+	left: 75%;
 }
 
-/* mouse over link */
+/* /Link Formatting/ */
+a {
+	/* All links*/
+	color: white;
+    text-decoration: none;
+}
 a:hover {
-    color: #d9d9d9;
-    text-decoration: none;
+	/* Mouse hover over link */
+    	color: #ADADAD;
 }
 
-/* active link */
-a:active {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-/* Mouse hover selection*/
 ::selection {
-    color: white; 
-    background: #CC0000;}
+	/* Mouse highlight selection*/
+	color: white; 
+	background: #CC0000;
+}
 
-/* /Text and Backround Formatting/ */
+/* /Text and Background Formatting/ */
 body { 
-	background-color: #ff1a1a
-; 
-	/*#ffe0b3= tan    #668cff = blue*/
-
-}
-
-p {
     font-family: "Courier New", Courier, Monospace, Times;
+	color: white;
+	text-align: center;
+	background-color:  #ff1a1a;  	/*#ffe0b3 = Tan    #668cff = Blue     #ff1a1a = Red*/
+	background-size: cover;
 }
 
-h1 {
-    text-align: left;
-    color: white;
-    margin-left: 20px;
+mark {
+	/* text highlight*/
+	background-color: #CC0000;
+	color: white;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+	line-height: 130%;
+}
+
+h1{
     font-size: 30px;
 }
+
 h2 {
-    text-align: right;
-    color: white;
-    margin-left: 17px;
-    margin-right: 80px;
+    font-size: 22.5px;
+}
+
+h3 {
     font-size: 15.5px;
 }

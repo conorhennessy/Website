@@ -1,58 +1,69 @@
-<!--Conor Hennessy; temporary maintance page-->
+<!--Conor Hennessy; temporary maintenance page-->
 <!--Created by Conor Hennessy-->
-<HTML>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+	<link rel="stylesheet" type="text/css" href="masterstylesheet.css">
+	<title>Conor Hennessy</title>
 
-<HEAD>
-        <link rel="icon" type="image/gif" href="icon.gif">
-		<link rel="stylesheet" type="text/css" href="masterstylesheet.css">
-        <title>Conor Hennessy</title>
-				
-		<!-- Google Analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	   <!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-89984579-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
 
-			ga('create', 'UA-89984579-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-    </HEAD>
+<body onload="webChange()">
+	<!---Background image--->
+	<div class="background-image">
+		<!-- now redundant as script bellow sets background image and CSS for styles-->
+	</div>
+	
+	<!---Content--->
+	<div class="text">
+		<h1>
+			<B><mark>
+			This site is currently<BR>
+			under construction...
+			</mark></B>
+		</h1>
+		<h2>
+			<mark><P id="maintanceMsg">
+			...</mark>
+			<></P>
+		</h2>
+	</div>
 
-<BODY onload="text()">
-		<!---Content Table--->
-		<TABLE ALIGN=CENTER WIDTH=100% HEIGHT=100%>
-		<TR WIDTH=75% HEIGHT=92%>
-			<TD>
-				<h1>
-					<P align="left">
-					This site is currently <BR>
-					under construction...
-					</P>
-				</h1>
-                </TD>
-			<TD>
-                </TD>
-		</TR>
+	<!---Footer--->
+	<div class="footer">
+		<h3>
+			<P align=right>
+			<a href="https://www.instagram.com/conorhennessy_/">
+			Instagram: ConorHennessy_<BR>
+			<a href="https://twitter.com/conorhennessy_">
+			Twitter: @ConorHennessy_<BR>
+			<a href="https://github.com/conorhennessy">
+			Github: ConorHennessy</a>
+			</P>
+			</h3>
+	</div>
 
-		<TR WIDTH=20% HEIGHT=8%>
-			<TD>
-                </TD>
-			<TD>
-				<h2>
-					<P align="center-right">
-					<a href="https://www.instagram.com/conorhennessy_/">
-					Instagram: ConorHennessy_<BR>
-					<a href="https://twitter.com/conorhennessy_">
-					Twitter:   @ConorHennessy_<BR>
-					<a href="https://github.com/conorhennessy">
-					Github: ConorHennessy
-					</a>
-					</P>
-				</h2>
-			</TD>
-		</TR>
-        </TABLE>
-    <BODY>
-		
-</HTML>
+<body>
+
+<!-- Background image and text script-->
+<!-- imageCount is scalable with more images uploaded-->
+<script>
+var imageCount = 6;
+function webChange(){
+	var num = Math.round( imageCount * Math.random() );
+	document.body.background = 'images/background'+num+'.jpg';
+
+	var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Conor Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello! Hello!"];
+	document.getElementById("maintanceMsg").innerHTML = msg[Math.floor(msg.length * Math.random())];
+}
+</script>
+</html>
