@@ -17,10 +17,7 @@
 </head>
 
 <body onload="webChange()">
-	<!---Background image--->
-	<div class="background-image">
-		<!-- now redundant as script bellow sets background image and CSS for styles-->
-	</div>
+
 	<!---Content--->
 	<div class="text">
 		<h1>
@@ -48,6 +45,7 @@
 			</P>
 			</h3>
 	</div>
+	
 <body>
 
 <!-- Background image and text script-->
@@ -57,7 +55,7 @@ var imageCount = 6;
 function webChange(){
 	var num = Math.round( imageCount * Math.random() );
 	document.body.background = 'images/background'+num+'.jpg';
-	var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Conor Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello! Hello!"];
+	var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Conor Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello hello!","Hello world!"];
 	document.getElementById("maintanceMsg").innerHTML = msg[Math.floor(msg.length * Math.random())];
 }
 </script>
