@@ -1,42 +1,43 @@
-<!--Conor Hennessy; temporary maintenance page-->
-<!--Created by Conor Hennessy-->
+<!--conorhennessy.uk; temporary page while im making the proper site! -->
+<!--Try having a look at my error page too! -->
+<!--Created by Conor Hennessy; 28/01/18 -->
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89984579-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-89984579-1');
+	</script>
+
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
 	<link rel="stylesheet" type="text/css" href="masterstylesheet.css">
 	<title>Conor Hennessy</title>
-	   <!-- Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-89984579-1', 'auto');
-		ga('send', 'pageview');
-	</script>
 </head>
 
 <body onload="webChange()">
-
 	<!---Content--->
 	<div class="text">
 		<h1>
 			<B><mark>
-			This site is currently<BR>
-			under construction...
+			I'm still working on this...<BR />
+			Pop back soon!
 			</mark></B>
 		</h1>
 		<h2>
-			<mark><P id="maintanceMsg">
-			...</mark>
-			<></P>
+			<P id="maintanceMsg" class="sub">
+			...
+			</P>
 		</h2>
 	</div>
 	<!---Footer--->
 	<div class="footer">
 		<h3>
 			<P align=right>
-			<a href="https://www.instagram.com/conorhennessy_/">
+			<a href="https://instagram.com/conorhennessy_/">
 			Instagram: ConorHennessy_<BR>
 			<a href="https://twitter.com/conorhennessy_">
 			Twitter: @ConorHennessy_<BR>
@@ -48,15 +49,17 @@
 	
 <body>
 
-<!-- Background image and text script-->
-<!-- imageCount is scalable with more images uploaded-->
+<!-- Subheading text script;-->
+<!-- Checks if 'visit' cookie exists, if so give random sub heading. Else tell them to refresh the page!-->
 <script>
-var imageCount = 6;
 function webChange(){
-	var num = Math.round( imageCount * Math.random() );
-	document.body.background = 'images/background'+num+'.jpg';
-	var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Conor Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello hello!","Hello world!"];
-	document.getElementById("maintanceMsg").innerHTML = msg[Math.floor(msg.length * Math.random())];
+	if(document.cookie.indexOf("VisitState") >= 0){
+		var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Conor Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello hello!","Hello world!"];
+		document.getElementById("maintanceMsg").innerHTML = msg[Math.floor(msg.length * Math.random())];
+	} else {
+		document.cookie = "VisitState = Yep!";
+		document.getElementById("maintanceMsg").innerHTML = "Try refreshing the page!";
+	}
 }
 </script>
 </html>

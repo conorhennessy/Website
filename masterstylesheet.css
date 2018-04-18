@@ -38,18 +38,24 @@ body {
 	color: white;
 	text-align: center;
 	background-color:  white;  	/*#ffe0b3 = Tan    #668cff = Blue     #ff1a1a = Red*/
-	/*background-image: url("images/background1.jpg");     Turn this on to keep backround on rainy photo */
+	background-image: url("images/background.jpg");
 	background-size: cover;
 }
 
-mark {
-	/* text highlight*/
-	background-color: #CC0000;
-	color: white;
-    opacity: 0.85;
+/* text highlight*/
+mark{
+	opacity: 0.85;
     filter: alpha(opacity=85); /* For IE8 and earlier */
 	line-height: 130%;
+	background-color: #CC0000;
+	color: white;
 }
+p.sub{
+	background-color: white;
+	color: #CC0000;
+	opacity: 0.65;
+}
+
 
 h1{
   font-size: 30px;
