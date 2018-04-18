@@ -12,6 +12,7 @@
 	position: fixed;
 	top: 90%;
 	left: 75%;
+	font-size: 15.5px;
 }
 
 
@@ -45,7 +46,7 @@ body {
 /* text highlight*/
 mark{
 	opacity: 0.85;
-    filter: alpha(opacity=85); /* For IE8 and earlier */
+    filter: alpha(opacity=85); /* For IE8 and earlier :L */
 	line-height: 130%;
 	background-color: #CC0000;
 	color: white;
@@ -54,17 +55,10 @@ p.sub{
 	background-color: white;
 	color: #CC0000;
 	opacity: 0.65;
+	font-size: 22.5px;
 }
 
 
 h1{
   font-size: 30px;
-}
-
-h2 {
-    font-size: 22.5px;
-}
-
-h3 {
-    font-size: 15.5px;
 }
