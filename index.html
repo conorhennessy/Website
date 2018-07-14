@@ -1,6 +1,6 @@
-<!--conorhennessy.uk; temporary page while im making the proper site! -->
+<!--conorhennessy.uk: temporary page while I'm making the proper site! -->
 <!--Try having a look at my error page too! -->
-<!--Created by Conor Hennessy; 28/01/18 -->
+<!--Created by Conor Hennessy: 14/07/18 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,12 +46,12 @@
 	</div>
 	
 
-<!-- Subheading text script;-->
-<!-- Checks if 'visit' cookie exists, if so give random sub heading. Else tell them to refresh the page!-->
+<!-- Subheading text script: -->
+<!-- Checks if 'visit' cookie exists, if so give random sub heading. Else tell them to refresh the page! -->
 <script>
 function webChange(){
 	if(document.cookie.indexOf("VisitState") >= 0){
-		var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Conor Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello hello!","Hello world!"];
+		var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello hello!","Hello world!"];
 		document.getElementById("maintanceMsg").innerHTML = msg[Math.floor(msg.length * Math.random())];
 	} else {
 		document.cookie = "VisitState = Yep!";

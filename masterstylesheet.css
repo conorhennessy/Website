@@ -43,10 +43,10 @@ body {
 	background-size: cover;
 }
 
-/* text highlight*/
+/* Text highlight*/
 mark{
 	opacity: 0.85;
-    filter: alpha(opacity=85); /* For IE8 and earlier :L */
+    filter: alpha(opacity=85); /*   For IE8 and earlier :/   */
 	line-height: 130%;
 	background-color: #CC0000;
 	color: white;
