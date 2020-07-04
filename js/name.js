@@ -163,17 +163,17 @@ Vehicle.prototype.flee = function(target) {
 
 
 
-var SillyRotate = function(el, toRotate, period) {
+var TypingCarousel = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
+  this.period = period;
   this.text = '';
   this.tick();
   this.isDeleting = false;
 };
 
-SillyRotate.prototype.tick = function() {
+TypingCarousel.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullText = this.toRotate[i];
 
@@ -183,7 +183,7 @@ SillyRotate.prototype.tick = function() {
     this.text = fullText.substring(0, this.text.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.text+'</span>';
+  this.el.innerHTML = '<span class="wrap">' + this.text + '</span>';
 
   var that = this;
   var delta = 100 - Math.random() * 100;
@@ -205,12 +205,12 @@ SillyRotate.prototype.tick = function() {
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('silly-rotate');
-  for (var i=0; i<elements.length; i++) {
+  var elements = document.getElementsByClassName('typing-carousel');
+  for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('text-rotate');
     var period = elements[i].getAttribute('text-period');
     if (toRotate) {
-      new SillyRotate(elements[i], JSON.parse(toRotate), period);
+      new TypingCarousel(elements[i], JSON.parse(toRotate), period);
     }
   }
   // INJECT CSS

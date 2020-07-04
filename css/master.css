@@ -17,7 +17,20 @@ img.emoji {
    vertical-align: -0.1em;
 }
 
-.silly-rotate > .wrap { border-right: 0.08em solid #666 }
+.typing-carousel > .wrap {
+	animation: animated-cursor 900ms steps(29,end) infinite;
+}
+
+@keyframes animated-cursor {
+	from{
+		border-right: 0.08em solid;
+		border-right-color: rgba(150,150,150,.9);
+	}
+  	to{
+  		border-right: 0.08em solid;
+  		border-right-color: transparent;
+  	}
+}
 
 h1, h2 {
   	font-weight: 200;
