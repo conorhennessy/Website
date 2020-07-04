@@ -1,0 +1,64 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');*/
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	/*font-family: 'Open Sans', sans-serif;*/
+	background: #f4f6ff;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+.silly-rotate > .wrap { border-right: 0.08em solid #666 }
+
+h1, h2 {
+  	font-weight: 200;
+  	margin: 0.2em 0;
+}
+h1 { 
+	font-size: 3em;
+	transform: translate(-0.05em, 0);
+}
+h2 {
+  	color: #888;
+  	font-size: 2em;
+}
+
+#name {
+	height: 200px;
+	width: 100%;
+}
+
+#contour {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 30%;
+	z-index: 1;
+}
+
+.content {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    width: 70%;
+}
+
+.details {
+	transform: translate(0, -3em);
+	margin-left: 20px;
+	padding-left: 30px;
+	text-align: left;
+	z-index: 1;
+}

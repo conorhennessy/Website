@@ -1,63 +1,46 @@
-<!--conorhennessy.uk: temporary page while I'm making the proper site! -->
-<!--Try having a look at my error page too! -->
-<!--Created by Conor Hennessy: 14/07/18 -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89984579-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Conor Hennessy's personal site, featuring recent projects and portfolio.">
+	<meta charset="utf-8">
 
-	  gtag('config', 'UA-89984579-1');
-	</script>
-
-    <link rel="icon" type="image/x-icon" href="images/icon.ico">
-	<link rel="stylesheet" type="text/css" href="masterstylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"/>
+	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.ico">
 	<title>Conor Hennessy</title>
 </head>
-
-<body onload="webChange()">
-	<!-- Content -->
-	<div class="text">
-		<h1>
-			<B><mark>
-			I'm still working on this...<BR />
-			Pop back soon!
-			</mark></B>
-		</h1>
-			<P id="maintanceMsg" class="sub">
-			...
-			</P>
+<body>
+	<div id="contour"> 
 	</div>
-	<!-- Footer -->
-	<div class="footer">
-			<P>
-			<a href="https://instagram.com/conorhennessy_/">
-			Instagram: ConorHennessy_</a><BR>
-			<a href="https://twitter.com/conorhennessy_">
-			Twitter: @ConorHennessy_</a><BR>
-			<a href="https://github.com/conorhennessy">
-			Github: ConorHennessy</a>
-			</P>
+	<div class="content">
+		<div id="name" class="name">
+			
+		</div>
+		<div class="details">
+			<h1>Hi I'm Conor &#x1f44b;</h1>
+			<h2>I'm a<span
+			     class="silly-rotate"
+			     text-period="2000"
+			     text-rotate='[" student.", "n engineer.", " cyclist.", " &#x1F986;"]'></span>
+			</h2>
+			<ul id="social">
+				<li id="twitter"><a href="https://twitter.com/conorhennessy_">@conorhennessy_</a></li>
+				<li id="github"><a href="https://github.com/conorhennessy">/conorhennessy</a></li>
+			</ul>
+			<h3>Here are some of the projects I've worked on:</h3>
+			<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+			</ul>
+		</div>
 	</div>
-	
-
-<!-- Subheading text script: -->
-<!-- Checks if 'visit' cookie exists, if so give random sub heading. Else tell them to refresh the page! -->
-<script>
-function webChange(){
-	if(document.cookie.indexOf("VisitState") >= 0){
-		var msg = ["Have you tried turning it on and off again?","Try refreshing the page!","Professional monkeys are currently working on this, come back soon!","'Got a Hennessy in my hand' - Drake, 2016","It's all for the greater good...","This quote is like a circle. It is pointless.","Hello hello!","Hello world!"];
-		document.getElementById("maintanceMsg").innerHTML = msg[Math.floor(msg.length * Math.random())];
-	} else {
-		document.cookie = "VisitState = Yep!";
-		document.getElementById("maintanceMsg").innerHTML = "Try refreshing the page!";
-	}
-}
-</script>
+	<script src="js/name.js"></script>
+	<script src="/js/perlin.js"></script>
+	<script src="/js/contour.js"></script>
 </body>
 </html>
