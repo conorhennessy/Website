@@ -7,7 +7,17 @@ body {
 	background: #f4f6ff;
 	margin: 0;
 	padding: 0;
-	color: #000000;
+	color: #393e46;
+	overflow-x: hidden;
+}
+
+::selection {
+  background: #a6dcf5; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #a6dcf5; /* Gecko Browsers */
+  color: white;
 }
 
 img.emoji {
@@ -41,8 +51,17 @@ h1 {
 	transform: translate(-0.05em, 0);
 }
 h2 {
-  	color: #888;
   	font-size: 2em;
+  	padding-bottom: 0.4em;
+}
+
+a, a:visited {
+	color: #3b6978;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 #name {
