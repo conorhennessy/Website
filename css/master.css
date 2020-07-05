@@ -55,6 +55,39 @@ h2 {
   	padding-bottom: 0.4em;
 }
 
+ul {
+	padding: 0 0 lem 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul li {
+	padding-bottom: 0.8em;
+}
+
+ul li::before {
+	display: inline-block;
+    height: 1.1em;
+    width: 1.1em;
+    margin: .1em 0.8em .1em .1em;
+    vertical-align: -0.1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+}
+
+ul li.twitter::before {
+	content: url("https://twemoji.maxcdn.com/v/latest/svg/1f426.svg");
+}
+
+ul li.github::before {
+    content: url("https://twemoji.maxcdn.com/v/latest/svg/1f419.svg");
+}
+
+ul li.uni::before {
+    content: url("https://twemoji.maxcdn.com/v/latest/svg/1f393.svg");
+}
+
 a, a:visited {
 	color: #3b6978;
 	text-decoration: none;
