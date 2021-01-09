@@ -46,7 +46,7 @@ h1, h2 {
   	font-weight: 200;
   	margin: 0.2em 0;
 }
-h1 { 
+h1 {
 	font-size: 2.25em;
 	transform: translate(-0.05em, 0);
 }
@@ -66,9 +66,9 @@ ul li {
 }
 
 ul li::before {
-	display: inline-block;
-    height: 1.1em;
-    width: 1.1em;
+    display: inline-block;
+    height: 2em;
+    width: 1.8em;
     margin: .1em 0.8em .1em .1em;
     vertical-align: -0.1em;
     background-repeat: no-repeat;
@@ -81,14 +81,19 @@ ul li.twitter::before {
 }
 
 ul li.github::before {
-    content: url("https://twemoji.maxcdn.com/v/latest/svg/1f419.svg");
+    content: url("https://twemoji.maxcdn.com/v/latest/svg/1f468-200d-1f4bb.svg");
 }
 
 ul li.uni::before {
     content: url("https://twemoji.maxcdn.com/v/latest/svg/1f393.svg");
 }
 
+ul li.camera::before {
+    content: url("https://twemoji.maxcdn.com/v/latest/svg/1f4f7.svg");
+}
+
 a, a:visited {
+	vertical-align: super;
 	color: #3b6978;
 	text-decoration: none;
 }
