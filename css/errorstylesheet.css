@@ -1,6 +1,28 @@
-/* CSS for error page, everything else is inherited from master*/
 body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	/*font-family: 'Open Sans', sans-serif;*/
 	background-color:  #398E21;
 	background-image: url('http://imageshack.com/a/img921/1338/tWeelB.gif');
 	background-repeat: no-repeat;
+	padding-left: 30%;
+	padding-top: 50%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	color: #393e46;
+	overflow-x: hidden;
+}
+
+::selection {
+  background: #a6dcf5; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #a6dcf5; /* Gecko Browsers */
+  color: white;
+}
+
+mark {
+	background: #f4f6ff;
 }
