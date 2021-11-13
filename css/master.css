@@ -133,3 +133,7 @@ a:hover {
 	z-index: 1;
 }
 
+#p5_loading {
+	display: none;
+}
+
