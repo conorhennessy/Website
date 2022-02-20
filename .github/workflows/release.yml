@@ -16,18 +16,18 @@ jobs:
     name: Run Deployment
     runs-on: ubuntu-latest
   
-  env:
-    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
-    CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Upload site to S3
-      run: ./scripts/upload.sh
+      - name: Upload site to S3
+        run: ./scripts/upload.sh
 
-    - name: Invalidate CloudFront Distribution
-      run: ./scripts/invalidate.sh
+      - name: Invalidate CloudFront Distribution
+        run: ./scripts/invalidate.sh
