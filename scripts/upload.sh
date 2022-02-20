@@ -8,6 +8,9 @@ S3_BUCKET=$S3_BUCKET_NAME
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 COMMIT_SHA=$(git rev-parse --short HEAD)
 
+echo pwd
+echo ls -la
+
 echo "Uploading: <${PAGE_DIRECTORY}> (from <${BRANCH}> @ <${COMMIT_SHA}>) to <${S3_BUCKET}>"
 
 for entry in "$PAGE_DIRECTORY"/*; do
