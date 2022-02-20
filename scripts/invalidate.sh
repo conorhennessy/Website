@@ -4,4 +4,4 @@
 
 CLOUDFRONT_DISTRIBUTION=$CLOUDFRONT_DISTRIBUTION_ID
 
-aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION} --paths '/*'
+aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION} --paths '/*' --region eu-west-1
