@@ -1,5 +1,4 @@
 console.log("Hello Hello! 👋\nYou can see the rest of my code here https://github.com/conorhennessy\n   - Conor 🦆");
-twemoji.parse(document.body);
 
 var font;
 var vehicles = [];
