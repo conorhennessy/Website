@@ -1,8 +1,6 @@
 // Console info log
 console.log("Hello Hello! 👋\nYou can see the rest of my code here https://github.com/conorhennessy\n   - Conor 🦆");
 
-// Replace all emojis with Twemojis
-twemoji.parse(document.body);
 
 //Make animating Conor Hennessy name title
 var font;

@@ -77,11 +77,11 @@ ul li::before {
 }
 
 ul li.github::before {
-    content: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f468-200d-1f4bb.svg");
+    content: url("https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/1f468-200d-1f4bb.svg");
 }
 
 ul li.camera::before {
-    content: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4f7.svg");
+    content: url("https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/1f4f7.svg");
 }
 
 a, a:visited {
